@@ -26,7 +26,7 @@ The project is one of the challenges of Rocketseat's explorer course. In the pro
 <br>
 <br>
 
-## 📚 Tecnologias
+## 📚 Technologies
 <br>
 
 
