@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fc-main:#34355B;
+
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    background-color: white;
+    width: min(42.8, 90%);
+    
+    text-align: center;
+    padding: 3.8rem 4.8rem 3.8rem 4.8rem;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+
+    color: var(--fc-main)
+}
+/*Screen1*/
+main h1 {
+    margin-bottom: 1.4rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+main p {
+    margin-bottom: 2rem;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+main .fortuneCookie{
+    width:  80%;
+    margin-left: -1rem;
+}
+main .fortuneCookie:hover {
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.hide {
+    display: none;
+}
+
+/*Screen2*/
+main h2 {
+    margin-bottom: 1.7rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+
+.wrapper {
+    margin-bottom: 1.7rem;
+    width: 29.3rem;
+    
+
+    text-align: center;
+
+    background: #E4EDF1;
+
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    font-family: 'Dancing Script';
+    font-size: 1.8rem;
+
+    animation: myAnim 1.2s ease 0s 1 alternate backwards;
+
+   
+
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.2)translateY(360px);
+       
+		transform-origin: 45% 100%;
+	}
+   
+	100% {
+		transform: scale(1)translateY(0px);
+		transform-origin: 45% 100%;
+	}
+  
+}
+  
+.openedCookie {
+    width: 80%;
+    margin-bottom: 1.7rem;
+}   
+
+button {
+    border: none;
+
+    background: #FF9500;
+    color: white;
+    
+    border-radius: 4px;
+    padding: 1.6rem;
+}
+button:hover {
+    background: #af6702;
+
+}
+
