@@ -1,15 +1,14 @@
 const fortuneCookie = document.querySelector(".fortuneCookie")
-
+//Variables
 let screen1 = document.querySelector(".screen1")
 let screen2 = document.querySelector(".screen2")
 let randomNumber = Math.round(Math.random()* 10 )
 let openOtherCookie = document.querySelector("#openOther")
 
-
-
+//Events
 fortuneCookie.addEventListener('click', messageOfLuck)
 openOtherCookie.addEventListener('click', openedAgain)
-
+//Functions
 function messageOfLuck() {
     toggleScreen ()
     
